@@ -93,7 +93,9 @@ input[type="password"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus,
-select:focus {}
+select:focus {
+	background:white;
+}
 
 /*Navigation*/
 .ba-header-bar {
