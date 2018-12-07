@@ -757,6 +757,131 @@ select:focus {
   top: 39px;
 }
 
+/*HOME*/
+.ba-home {
+  background: url(../img/background-notebook-pencil.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ba-home__contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ba-home__contacts .ba-home-socials {
+  width: 100%;
+  border-bottom: 1px solid #59D3C6;
+  padding: 3px 0 3px 24px;
+}
+
+.ba-home__contacts .ba-home-socials__inst {
+  margin-right: 24px;
+}
+
+.ba-home__welcome {
+  text-align: center;
+  color: #323E3D;
+  line-height: 1.4;
+  margin: 0 0 114px 77px;
+}
+
+.ba-home__welcome p:first-child {
+  font-size: 40px;
+}
+
+.ba-home__welcome span {
+  color: #C23E3E;
+}
+
+.ba-home__welcome p + p {
+  margin-top: 20px;
+}
+
+.ba-home__line-1 {
+  top: 14.3%;
+  left: 36.8%;
+}
+
+.ba-home__line-2 {
+  top: 26%;
+  left: -2.6%;
+}
+
+.ba-home__line-3 {
+  top: 15.3%;
+  right: -2.7%;
+}
+
+.ba-home__line-4 {
+  top: 42.3%;
+  left: 14.1%;
+}
+
+.ba-home__line-5 {
+  bottom: 19%;
+  left: 24%;
+}
+
+.ba-home__line-6 {
+  bottom: 43.9%;
+  right: -5%;
+}
+
+.ba-home__line-7 {
+  bottom: 7.3%;
+  right: 2.2%;
+}
+
+.ba-home__double-line-1 {
+  top: 7.8%;
+  left: 12.5%;
+}
+
+.ba-home__double-line-2 {
+  top: 27.4%;
+  right: 11.1%;
+}
+
+.ba-home__double-line-3 {
+  bottom: 26.7%;
+  right: 22.9%;
+}
+
+.ba-home__double-line-4 {
+  bottom: 31%;
+  left: -1.7%;
+}
+
+.ba-home__double-line-5 {
+  top: 7.9%;
+  right: 34.9%;
+}
+
+.full-height {
+  height: 83.7vh;
+}
+
+.ba-empty {
+  height: 38px;
+  background: #B4DFD9;
+}
+
+p.ba-copyrights--home {
+  margin-top: 1px;
+}
+
+/*ABOUT*/
 /*For job*/
 .ba-for-job {
   margin: 37px 0 52px;

@@ -94,7 +94,7 @@ input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus,
 select:focus {
-	background:white;
+	background: white;
 }
 
 /*Navigation*/
@@ -198,6 +198,120 @@ select:focus {
 	top: 39px;
 }
 
+/*HOME*/
+.ba-home {
+	background: url(../img/background-notebook-pencil.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__contacts {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		.ba-home-socials {
+			width: 100%;
+			border-bottom: 1px solid #59D3C6;
+			padding: 3px 0 3px 24px;
+
+			&__inst {
+				margin-right: 24px;
+			}
+		}
+	}
+
+	&__welcome {
+		text-align: center;
+		color: $gray;
+		line-height: 1.4;
+		margin: 0 0 114px 77px;
+
+		& p:first-child {
+			font-size: 40px;
+		}
+
+		span {
+			color: $red;
+		}
+
+		p+p {
+			margin-top: 20px;
+		}
+	}
+
+	&__line-1 {
+		top: 14.3%;
+		left: 36.8%;
+	}
+
+	&__line-2 {
+		top: 26%;
+		left: -2.6%;
+	}
+
+	&__line-3 {
+		top: 15.3%;
+		right: -2.7%;	
+	}
+
+	&__line-4 {
+		top: 42.3%;
+		left: 14.1%;
+	}
+
+	&__line-5 {
+		bottom: 19%;
+		left: 24%;
+	}
+
+	&__line-6 {
+		bottom: 43.9%;
+		right: -5%;
+	}
+
+	&__line-7 {
+		bottom: 7.3%;
+		right: 2.2%;
+	}
+	&__double-line-1 {
+		top: 7.8%;
+		left: 12.5%;
+	}
+	&__double-line-2 {
+		top: 27.4%;
+		right: 11.1%;
+	}
+	&__double-line-3 {
+		bottom: 26.7%;
+		right: 22.9%;
+	}
+	&__double-line-4 {
+		bottom: 31%;
+		left: -1.7%;
+	}
+	&__double-line-5 {
+		top: 7.9%;
+		right: 34.9%;
+	}
+}
+
+.full-height {
+	height: 83.7vh;
+}
+
+.ba-empty {
+	height: 38px;
+	background: #B4DFD9;
+}
+
+p.ba-copyrights--home {
+	margin-top: 1px;
+}
+
+/*ABOUT*/
 /*For job*/
 .ba-for-job {
 	margin: 37px 0 52px;
