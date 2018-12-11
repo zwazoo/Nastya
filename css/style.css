@@ -654,6 +654,7 @@ select:focus {
   top: 13px;
   right: 6.4%;
   width: 86.7%;
+  z-index: 5;
 }
 
 .ba-header-bar:after {
@@ -664,6 +665,7 @@ select:focus {
   background: #59D3C6;
   position: absolute;
   bottom: 0;
+  z-index: 5;
 }
 
 .ba-nav {
@@ -777,16 +779,6 @@ select:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.ba-home__contacts .ba-home-socials {
-  width: 100%;
-  border-bottom: 1px solid #59D3C6;
-  padding: 3px 0 3px 24px;
-}
-
-.ba-home__contacts .ba-home-socials__inst {
-  margin-right: 24px;
 }
 
 .ba-home__welcome {
@@ -1421,6 +1413,133 @@ p.ba-copyrights--home {
   text-align: center;
   font-weight: 600;
   margin-top: 16px;
+}
+
+/*CONTACTS*/
+.ba-contacts {
+  background: #B4DFD9;
+  position: relative;
+  color: #323E3D;
+  padding: 72px 50px 0 13px;
+}
+
+.ba-contacts__social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ba-contacts__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ba-contacts__main p {
+  font-size: 48px;
+  font-weight: 900;
+  width: 44%;
+  line-height: 1.5;
+  padding: 10px 46px 10px 10px;
+}
+
+.ba-contacts__main p span {
+  color: #C23E3E;
+}
+
+.ba-contacts__big-circle {
+  fill: #59D3C6;
+  right: 0;
+  top: 15.1%;
+}
+
+.ba-contacts__points {
+  fill: #323E3D;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 25.8%;
+  left: 30%;
+}
+
+.ba-form {
+  width: 56%;
+  margin-left: 79px;
+  padding: 50px 74px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.ba-form__row {
+  position: relative;
+  width: 100%;
+}
+
+.ba-form__row input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #323E3D;
+  padding: 5px;
+  padding: 1px 7px;
+}
+
+.ba-form__row input:hover, .ba-form__row input:focus {
+  background: none;
+  outline: none;
+}
+
+.ba-form__row input:focus {
+  border-bottom: 3px solid black;
+  -webkit-transition: border-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: border-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: border-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ba-form__row input:focus ~ label,
+.ba-form__row input:valid ~ label {
+  position: absolute;
+  bottom: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ba-form__row label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #323E3D;
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+}
+
+.ba-form div + div {
+  margin-top: 77px;
+}
+
+.ba-form button {
+  margin-top: 72px;
+}
+
+.ba-full-width-socials {
+  width: 100%;
+  border-bottom: 1px solid #59D3C6;
+  padding: 3px 0 3px 24px;
+}
+
+.ba-full-width-socials__inst {
+  margin-right: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

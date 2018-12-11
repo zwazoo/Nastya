@@ -106,6 +106,7 @@ select:focus {
 	top: 13px;
 	right: 6.4%;
 	width: 86.7%;
+	z-index: 5;
 }
 
 .ba-header-bar:after {
@@ -116,6 +117,7 @@ select:focus {
 	background: $dark-turquoise;
 	position: absolute;
 	bottom: 0;
+	z-index: 5;
 }
 
 .ba-nav {
@@ -211,16 +213,6 @@ select:focus {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-
-		.ba-home-socials {
-			width: 100%;
-			border-bottom: 1px solid #59D3C6;
-			padding: 3px 0 3px 24px;
-
-			&__inst {
-				margin-right: 24px;
-			}
-		}
 	}
 
 	&__welcome {
@@ -254,7 +246,7 @@ select:focus {
 
 	&__line-3 {
 		top: 15.3%;
-		right: -2.7%;	
+		right: -2.7%;
 	}
 
 	&__line-4 {
@@ -276,22 +268,27 @@ select:focus {
 		bottom: 7.3%;
 		right: 2.2%;
 	}
+
 	&__double-line-1 {
 		top: 7.8%;
 		left: 12.5%;
 	}
+
 	&__double-line-2 {
 		top: 27.4%;
 		right: 11.1%;
 	}
+
 	&__double-line-3 {
 		bottom: 26.7%;
 		right: 22.9%;
 	}
+
 	&__double-line-4 {
 		bottom: 31%;
 		left: -1.7%;
 	}
+
 	&__double-line-5 {
 		top: 7.9%;
 		right: 34.9%;
@@ -790,4 +787,117 @@ p.ba-copyrights--home {
 	text-align: center;
 	font-weight: 600;
 	margin-top: 16px;
+}
+
+/*CONTACTS*/
+.ba-contacts {
+	background: $light-turquoise;
+	position: relative;
+	color: $gray;
+	padding: 72px 50px 0 13px;
+
+	&__social {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			font-size: 48px;
+			font-weight: 900;
+			width: 44%;
+			line-height: 1.5;
+			padding: 10px 46px 10px 10px;
+
+			span {
+				color: $red;
+			}
+		}
+	}
+	&__big-circle {
+		fill: $dark-turquoise;
+		right: 0;
+		top: 15.1%;
+	}
+	
+	&__points {
+		fill: $gray;
+		transform: rotate(90deg);
+		bottom: 25.8%;
+		left: 30%;
+	}
+}
+
+.ba-form {
+	width: 56%;
+	margin-left: 79px;
+	padding: 50px 74px 50px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	z-index: 1;
+
+	&__row {
+		position:relative;
+		width:100%;
+
+		input {
+			width: 100%;
+			background: none;
+			border: none;
+			border-bottom: 3px solid $gray;
+			padding: 5px;
+			padding: 1px 7px;
+
+			&:hover,
+			&:focus {
+				background: none;
+				outline: none;
+			}
+			&:focus {
+				border-bottom: 3px solid black;
+				transition: border-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+			}
+
+			&:focus ~ label,
+			&:valid ~ label {
+				position:absolute;
+				bottom:100%;
+				transition: 0.3s;
+			}
+		}
+
+		label {
+			font-size: 18px;
+			font-weight: 700;
+			color: $gray;
+			position: absolute;
+			bottom: 7px;
+			left: 7px;
+		}
+
+	}
+
+	div+div {
+		margin-top: 77px;
+	}
+
+	button {
+		margin-top: 72px;
+	}
+}
+
+
+.ba-full-width-socials {
+	width: 100%;
+	border-bottom: 1px solid #59D3C6;
+	padding: 3px 0 3px 24px;
+
+	&__inst {
+		margin-right: 24px;
+	}
 }

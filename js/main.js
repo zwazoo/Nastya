@@ -1,5 +1,14 @@
 $(document).ready(function(){
-    $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-    });
+
+    // $('.ba-form').validate({
+    //     rules:
+    //     {
+    //         mail:{
+    //             required: true,
+    //         },
+    //     }
+
+    // });
+
+
 });
