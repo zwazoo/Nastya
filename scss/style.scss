@@ -53,6 +53,7 @@ a,
 input[type="submit"],
 input[type="button"],
 button {
+	text-decoration: none;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
 
@@ -868,7 +869,6 @@ p.ba-copyrights--home {
 
 .ba-form__label {
 	display: inline-block;
-	float: right;
 	padding: 0 1em;
 	width: 40%;
 	font-weight: bold;
@@ -973,4 +973,60 @@ p.ba-copyrights--home {
 	&__inst {
 		margin-right: 24px;
 	}
+}
+
+.b-popup{
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    position:fixed;
+	top:0px;
+	left:0px;
+	z-index:5;
+}
+
+.b-popup-content {
+	position:relative;
+
+	.ba-about__circle-pop-up {
+		left:0;
+		bottom:0;
+		fill:$dark-turquoise;
+	}
+	.ba-about__exit-pop-up {
+		top:3%;
+		right:3%;
+		&:hover{
+			opacity:0.5;
+		}
+	}
+}
+
+.b-popup-content p {
+	text-align: center;
+	color:$gray;
+	margin: 11px 0 0 5px;
+    line-height: 1.48;
+
+	span {
+		color:$red;
+	}
+}
+
+.b-popup .b-popup-content{
+    margin:5px auto 5px auto;
+    width:570px;
+    height: 620px;
+    padding:10px;
+	background-color: $light-turquoise;
+	border:7px solid $dark-turquoise;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.ba-form--pop {
+	width: 91%;
+	margin-left: 35px;
+	padding-top: 3px;
+	position:relative;
+	z-index:1;
 }
