@@ -25,7 +25,13 @@
                         <li><a href="./pages/about.html">About</a></li>
                         <li><a href="pages/contacts.html">Contacts</a></li>
                     </ul>
-                    <div id="nav-icon"><span></span> <span></span> <span></span></div>
+                    <a href="javascript:MenuWork()">
+                        <div id="nav-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </nav>
         </header>
         <div class="ba-subcontainer">
@@ -109,6 +115,40 @@
     </div>
     <!-- /.ba-container -->
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $("#popup").fadeIn('slow');
+            $("#popup").show();
+            $(".ba-subcontainer").css('filter', 'blur(8px)');
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $("#popup").hide();
+            $(".ba-subcontainer").css('filter', 'blur(0px)');
+        }
+
+        function MenuWork() {
+            if ($("#nav-icon").hasClass('open')) {
+                $(".ba-menu").css('display', 'flex');
+            } else {
+                $(".ba-menu").css('display', 'none');
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
