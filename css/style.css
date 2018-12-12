@@ -557,7 +557,7 @@ body {
 
 @media screen and (min-width: 1400px) {
   .ba-container {
-    max-width: 1200px;
+    max-width: 1250px;
   }
 }
 
@@ -859,6 +859,12 @@ select {
 
 .full-height {
   height: 90vh;
+}
+
+@media screen and (min-width: 1400px) {
+  .full-height {
+    height: 80vh;
+  }
 }
 
 .ba-empty {
