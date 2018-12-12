@@ -555,6 +555,12 @@ body {
   max-width: 1070px;
 }
 
+@media screen and (min-width: 1400px) {
+  .ba-container {
+    max-width: 1200px;
+  }
+}
+
 .ba-subcontainer {
   border: 7px solid #59D3C6;
   background-color: #E2E0DA;
@@ -1631,6 +1637,14 @@ p.ba-copyrights--home {
 
 .b-popup-content {
   position: relative;
+  margin: 5px auto 5px auto;
+  width: 570px;
+  height: 620px;
+  padding: 10px;
+  background-color: #B4DFD9;
+  border: 7px solid #59D3C6;
+  -webkit-box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #000;
 }
 
 .b-popup-content .ba-about__circle-pop-up {
@@ -1657,17 +1671,6 @@ p.ba-copyrights--home {
 
 .b-popup-content p span {
   color: #C23E3E;
-}
-
-.b-popup .b-popup-content {
-  margin: 5px auto 5px auto;
-  width: 570px;
-  height: 620px;
-  padding: 10px;
-  background-color: #B4DFD9;
-  border: 7px solid #59D3C6;
-  -webkit-box-shadow: 0px 0px 10px #000;
-  box-shadow: 0px 0px 10px #000;
 }
 
 .ba-form--pop {
