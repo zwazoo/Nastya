@@ -468,10 +468,10 @@
       $(document).ready(function(){
           //Скрыть PopUp при загрузке страницы    
           PopUpHide();
-          $(".ba-subcontainer").css('filter','blur(0px)');
       });
       //Функция отображения PopUp
       function PopUpShow(){
+          $("#popup").fadeIn('slow');
           $("#popup").show();
           $(".ba-subcontainer").css('filter','blur(8px)');
       }
@@ -481,6 +481,7 @@
           $(".ba-subcontainer").css('filter','blur(0px)');
       }
   </script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

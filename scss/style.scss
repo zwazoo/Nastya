@@ -889,6 +889,7 @@ p.ba-copyrights--home {
 	height: calc(100% - 1em);
 	text-align: left;
 	pointer-events: none;
+	color:$gray;
 }
 
 .ba-form__label-content {
@@ -983,6 +984,7 @@ p.ba-copyrights--home {
 	top:0px;
 	left:0px;
 	z-index:5;
+	display:none;
 }
 
 .b-popup-content {

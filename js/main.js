@@ -67,7 +67,6 @@ if ( typeof define === 'function' && define.amd ) {
 })();
 
 (function () {
-    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
     if (!String.prototype.trim) {
         (function () {
             // Make sure we trim BOM and NBSP
@@ -79,12 +78,11 @@ if ( typeof define === 'function' && define.amd ) {
     }
 
     [].slice.call(document.querySelectorAll('input.ba-form__input-field')).forEach(function (inputEl) {
-        // in case the input is already filled..
+        // in case the input is already filled
         if (inputEl.value.trim() !== '') {
             classie.add(inputEl.parentNode, 'input--filled');
         }
 
-        // events:
         inputEl.addEventListener('focus', onInputFocus);
         inputEl.addEventListener('blur', onInputBlur);
     });
