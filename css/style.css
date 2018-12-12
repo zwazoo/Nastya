@@ -654,6 +654,13 @@ select {
   z-index: 5;
 }
 
+@media screen and (min-width: 1400px) {
+  .ba-header-bar {
+    right: 13.4%;
+    width: 71.7%;
+  }
+}
+
 .ba-header-bar:after {
   content: "";
   display: block;
