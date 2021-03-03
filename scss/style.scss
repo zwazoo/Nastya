@@ -43,6 +43,7 @@ p,
 ul {
 	margin: 0;
 	padding: 0;
+	z-index:1;
 }
 
 h2 {
@@ -50,6 +51,18 @@ h2 {
 	font-weight: 900;
 	margin-bottom: 84px;
 	color: $red;
+
+	@media screen and (max-width:768px){
+		font-size: 35px;
+		margin-bottom: 30px;
+	}
+}
+h3 {
+	font-size: 24px;
+
+	@media screen and (max-width:768px){
+		font-size: 20px;
+	}
 }
 
 a,
@@ -117,6 +130,11 @@ select {
 .ba-nav {
 	display: flex;
 	align-items: center;
+
+	@media screen and (max-width:768px){
+		flex-wrap:wrap;
+		flex-direction: row-reverse;
+	}
 }
 
 .ba-menu {
@@ -136,6 +154,10 @@ select {
 		display: block;
 		line-height: 1;
 
+		@media screen and (max-width:768px){
+			font-size: 24px;
+		}
+
 		&:hover {
 			border-bottom-color: #0A0909;
 			position: relative;
@@ -145,6 +167,10 @@ select {
 
 	li+li {
 		padding-left: 76px;
+
+		@media screen and (max-width:768px){
+			padding-left: 15px;
+		}
 	}
 }
 
@@ -152,6 +178,7 @@ select {
 	width: 40px;
 	height: 30px;
 	position: relative;
+	z-index: 999;
 	margin-right:24px;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -171,7 +198,7 @@ select {
 	width: 100%;
 	background: #3B4544;
 	opacity: 1;
-	left: 0;
+	right: 10px;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
@@ -183,7 +210,7 @@ select {
   }
 
 #nav-icon span:nth-child(1) {
-  top: 8px;
+  top: 15px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -191,7 +218,7 @@ select {
 }
 
 #nav-icon span:nth-child(2) {
-  top: 24px;
+  top: 27px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -238,6 +265,10 @@ select {
 	justify-content: center;
 	align-items: center;
 
+	@media screen and (max-width:730px){
+		background:#b4dfd9;
+	}
+
 	&__contacts {
 		position: absolute;
 		bottom: 0;
@@ -250,8 +281,16 @@ select {
 		line-height: 1.4;
 		margin: 0 0 114px 77px;
 
+		@media screen and (max-width:768px){
+			margin: 0 0 0 50px;
+		}
+
 		& p:first-child {
 			font-size: 40px;
+
+			@media screen and (max-width:768px){
+				font-size: 30px;
+			}
 		}
 
 		span {
@@ -270,12 +309,12 @@ select {
 
 	&__line-2 {
 		top: 26%;
-		left: -2.6%;
+		left: 0%;
 	}
 
 	&__line-3 {
 		top: 15.3%;
-		right: -2.7%;
+		right: 0%;
 	}
 
 	&__line-4 {
@@ -290,7 +329,7 @@ select {
 
 	&__line-6 {
 		bottom: 43.9%;
-		right: -5%;
+		right: 0%;
 	}
 
 	&__line-7 {
@@ -315,7 +354,7 @@ select {
 
 	&__double-line-4 {
 		bottom: 31%;
-		left: -1.7%;
+		left: 0%;
 	}
 
 	&__double-line-5 {
@@ -328,6 +367,10 @@ select {
 	height: 90vh;
 	@media screen and (min-width: 1400px){
 		height: 80vh;
+	}
+	@media screen and (max-width: 768px){
+		height: 100%;
+		min-height: 100vh;
 	}
 }
 
@@ -347,7 +390,6 @@ p.ba-copyrights--home {
 	padding-top: 115px;
 	position: relative;
 
-
 	&__inf {
 		background-color: $red;
 		max-width: 893px;
@@ -358,6 +400,11 @@ p.ba-copyrights--home {
 	&__text {
 		width: 30%;
 		margin: 92px 102px 99px 0;
+
+		@media screen and (max-width:768px){
+			margin: 92px 50px 99px 0;
+			width: 77%;
+		}
 
 		h2 {
 			color: $light-turquoise;
@@ -376,6 +423,10 @@ p.ba-copyrights--home {
 			width: 50%;
 			line-height: 1.5;
 			color: $gray;
+
+			@media screen and (max-width:768px){
+				width: 70%;
+			}
 		}
 	}
 
@@ -383,29 +434,49 @@ p.ba-copyrights--home {
 		top: 38.2%;
 		left: 2.3%;
 		fill: $light-turquoise;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__big-circle {
 		left: 0;
 		top: 9%;
 		fill: $gray;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__pencil {
 		top: 44%;
 		left: 18.2%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__middle-circle {
 		right: 0;
 		top: 9%;
 		fill: $light-turquoise;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__half-circle {
 		right: 12%;
 		top: 9%;
 		fill: $light-turquoise;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__points--black {
@@ -418,9 +489,15 @@ p.ba-copyrights--home {
 /*lesson*/
 .ba-lesson {
 	display: flex;
+	flex-wrap:wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 21px;
+
+	@media screen and (max-width:768px){
+		padding: 0 7px;
+		justify-content: center;
+	}
 
 	&__plans {
 		width: 31%;
@@ -428,8 +505,12 @@ p.ba-copyrights--home {
 		text-align: center;
 		padding: 25px 0 19px;
 
+		@media screen and (max-width:768px){
+			width: 80%;
+			margin:20px 0;
+		}
+
 		h3 {
-			font-size: 24px;
 			color: $red;
 			font-weight: 900;
 			margin-bottom: 12px;
@@ -463,16 +544,28 @@ p.ba-copyrights--home {
 		background-color: $light-turquoise;
 		display: flex;
 		justify-content: center;
+
+		@media screen and (max-width:768px){
+			width: 100%;
+		}
 	}
 
 	&__text {
 		width: 58%;
 		margin: 92px 0px 96px 23px;
 
+		@media screen and (max-width:768px){
+			width: 85%;
+		}
+
 		span {
 			color: $gray;
 			margin-left: 100px;
 			line-height: 2.4;
+
+			@media screen and (max-width:768px){
+				margin:0;
+			}
 		}
 
 		p {
@@ -482,6 +575,10 @@ p.ba-copyrights--home {
 			width: 50%;
 			line-height: 1.6;
 			color: $gray;
+
+			@media screen and (max-width:768px){
+				width: 100%;
+			}
 		}
 	}
 
@@ -489,11 +586,19 @@ p.ba-copyrights--home {
 		bottom: 20.3%;
 		left: 2.5%;
 		fill: $red;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__plane {
 		top: 15.5%;
 		right: 0;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__middle-circle {
@@ -501,6 +606,10 @@ p.ba-copyrights--home {
 		top: 7.6%;
 		fill: $red;
 		transform: rotate(180deg);
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__half-circle {
@@ -508,6 +617,10 @@ p.ba-copyrights--home {
 		top: 7.5%;
 		fill: $red;
 		transform: rotate(180deg);
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__small-circle {
@@ -519,6 +632,10 @@ p.ba-copyrights--home {
 	&__big-half-circle {
 		right: 0%;
 		bottom: 2.5%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__quorter-circle {
@@ -526,6 +643,10 @@ p.ba-copyrights--home {
 		bottom: 10.8%;
 		fill: $red;
 		transform: rotate(-90deg);
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 }
 
@@ -535,7 +656,7 @@ p.ba-copyrights--home {
 }
 
 .ba-lesson__plans--center {
-	padding: 25px 7px 19px 14px;
+	padding: 19px 7px 19px 7px;
 }
 
 /*Life*/
@@ -553,11 +674,19 @@ p.ba-copyrights--home {
 		background-color: #579B94;
 		display: flex;
 		justify-content: flex-end;
+
+		@media screen and (max-width:768px){
+			width: 100%;
+		}
 	}
 
 	&__text {
 		width: 62%;
 		margin: 89px 18px 100px 0px;
+
+		@media screen and (max-width:768px){
+			width: 70%;
+		}
 
 		span {
 			color: #323E3D;
@@ -572,6 +701,10 @@ p.ba-copyrights--home {
 			width: 50%;
 			line-height: 1.6;
 			color: $gray;
+
+			@media screen and (max-width:768px){
+				width: 75%;
+			}
 		}
 	}
 
@@ -580,6 +713,10 @@ p.ba-copyrights--home {
 		top: 7.3%;
 		fill: $red;
 		transform: rotate(180deg);
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__points-black {
@@ -592,23 +729,39 @@ p.ba-copyrights--home {
 		bottom: 20.3%;
 		left: 2.2%;
 		fill: $red;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__person {
 		bottom: 23.9%;
 		left: 12.1%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__half-circle {
 		right: 2.1%;
 		bottom: 30.6%;
 		fill: $red;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__half-circle-black {
 		right: 2.1%;
 		bottom: 20.3%;
 		fill: $gray;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 }
 
@@ -637,10 +790,15 @@ p.ba-copyrights--home {
 		position: absolute;
 		left: -23%;
 		top: 43.7%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__quote {
 		display: flex;
+		flex-wrap:wrap;
 		justify-content: center;
 		align-items: center;
 		color: $gray;
@@ -649,6 +807,12 @@ p.ba-copyrights--home {
 		div {
 			width: 68%;
 			margin-left: 123px;
+
+			@media screen and (max-width:768px){
+				width: 100%;
+				margin-left: 0;
+				padding:0 16px;
+			}
 		}
 
 		span {
@@ -662,26 +826,46 @@ p.ba-copyrights--home {
 		margin: 0;
 		line-height: 1.5;
 
+		@media screen and (max-width:768px){
+			width: 100%;
+		}
+
 		&--right {
 			margin: 58px 0 52px 198px;
+
+			@media screen and (max-width:768px){
+				margin: 20px 0;
+			}
 		}
 	}
 
 	&__points {
 		top: 0;
 		right: 6.3%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__half-circle {
 		right: 0;
 		top: 7.4%;
 		fill: $light-turquoise;
+
+		@media screen and (max-width:768px){
+			top: -3%;
+		}
 	}
 
 	&__middle-circle {
 		right: 0;
 		bottom: 10.1%;
 		fill: $gray;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 }
 
@@ -690,6 +874,7 @@ p.ba-copyrights--home {
 .ba-photo {
 	position: relative;
 	display: flex;
+	flex-wrap:wrap;
 	justify-content: space-between;
 	padding: 23px 23px 167px;
 
@@ -698,13 +883,16 @@ p.ba-copyrights--home {
 		z-index: 1;
 	}
 
-	&__table {
+	@mixin photo() {
 		box-shadow: inset 0px 0px 3px 300px rgba(89, 211, 198, 0.5);
-		background: url(../img/photo_1.jpg) no-repeat;
-		background-size: 100% 100%;
 		width: 370px;
 		height: 555px;
 		transition: 0.5s;
+
+		@media screen and (max-width:768px){
+			width: 277px;
+			height: 416px;
+		}
 
 		&:hover {
 			box-shadow: none;
@@ -712,18 +900,16 @@ p.ba-copyrights--home {
 		}
 	}
 
+	&__table {
+		@include photo();
+		background: url(../img/photo_1.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+
 	&__wall {
-		box-shadow: inset 0px 0px 3px 300px rgba(89, 211, 198, 0.5);
+		@include photo();
 		background: url(../img/photo_2.jpg) no-repeat;
 		background-size: 100% 100%;
-		width: 370px;
-		height: 555px;
-		transition: 0.7s;
-
-		&:hover {
-			box-shadow: none;
-			transform: scale(1.1);
-		}
 	}
 
 	&__big-circle {
@@ -778,6 +964,10 @@ p.ba-copyrights--home {
 		padding: 2px 0 0px 20px;
 		margin-bottom: -4px;
 
+		@media screen and (max-width:768px){
+			width: 75%;
+		}
+
 		svg {
 			position: static;
 		}
@@ -791,24 +981,40 @@ p.ba-copyrights--home {
 		bottom: 6%;
 		right: 12.2%;
 		fill: $dark-turquoise;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__middle-circle {
 		bottom: 6.2%;
-		right: 0.2%;
+		right: 0;
 		fill: $dark-turquoise;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__points {
 		bottom: 36.3%;
 		left: 2.2%;
 		fill: $gray;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 
 	&__points-red {
 		top: -25.9%;
 		right: 2.3%;
 		fill: $red;
+
+		@media screen and (max-width:768px){
+			top: -50%;
+		}
 	}
 }
 
@@ -838,12 +1044,23 @@ p.ba-copyrights--home {
 		display: flex;
 		justify-content: space-between;
 
+		@media screen and (max-width:768px){
+			justify-content: center;
+			flex-wrap:wrap;
+		}
+
 		p {
 			font-size: 48px;
 			font-weight: 900;
 			width: 44%;
 			line-height: 1.5;
 			padding: 10px 46px 10px 10px;
+
+			@media screen and (max-width:768px){
+				width: 100%;
+				font-size: 34px;
+				padding: 0;
+			}
 
 			span {
 				color: $red;
@@ -861,6 +1078,10 @@ p.ba-copyrights--home {
 		transform: rotate(90deg);
 		bottom: 13.7%;
 		left: 30%;
+
+		@media screen and (max-width:768px){
+			display:none;
+		}
 	}
 }
 
@@ -872,6 +1093,12 @@ p.ba-copyrights--home {
 	flex-wrap: wrap;
 	justify-content: center;
 	z-index: 1;
+
+	@media screen and (max-width:768px){
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
 
 	button {
 		margin-top: 72px;
@@ -1068,4 +1295,8 @@ p.ba-copyrights--home {
 	padding-top: 3px;
 	position:relative;
 	z-index:1;
+}
+
+.main-svg{
+	display:none;
 }
